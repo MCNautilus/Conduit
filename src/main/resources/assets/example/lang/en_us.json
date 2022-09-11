@@ -1,0 +1,18 @@
+{
+  "config.global.enabled": "Enabled",
+  "config.global.position": "Position",
+  "config.global.format_string": "Format String",
+  "config.bool.true": "Yes",
+  "config.bool.false": "No",
+  "module.mango.name": "Mango",
+  "module.mango.description": "The core of Mango",
+  "config.mango.render_toggle": "Render",
+  "config.mango.offset": "Offset",
+  "config.mango.alignment": "Alignment",
+  "config.alignment.top_left": "Top Left",
+  "config.alignment.top_right": "Top Right",
+  "config.alignment.bottom_left": "Bottom Left",
+  "config.alignment.bottom_right": "Bottom Right",
+  "module.position.name": "Pos",
+  "module.position.description": "Display's your current position"
+}

@@ -1,0 +1,9 @@
+[versions]
+minecraft = "1.8.9"
+yarn = "1.8.9+build.202206171821"
+loader = "0.12.2"
+
+[libraries]
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+yarn = { module = "net.fabricmc:yarn", version.ref = "yarn" }
+loader = { module = "net.fabricmc:fabric-loader", version.ref = "loader" }
