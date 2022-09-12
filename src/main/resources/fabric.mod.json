@@ -1,21 +1,15 @@
 {
   "schemaVersion": 1,
-  "id": "mango",
+  "id": "stem",
   "version": "${version}",
-
-  "name": "Mango Example",
-  "description": "An example mod for the Mango organisation",
+  "name": "Stem",
+  "description": " The core of Mango - a universal core for all loaders and versions. ",
   "authors": [
     "Eny"
   ],
   "license": "MPL-2.0",
-  "icon": "assets/example/icon.png",
+  "icon": "assets/stem/icon.png",
   "environment": "client",
-  "entrypoints": {
-    "main": [
-      "org.mango.example.impl.FabricInit"
-    ]
-  },
   "depends": {
     "fabricloader": ">=0.9.0",
     "minecraft": "*"

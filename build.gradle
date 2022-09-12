@@ -31,7 +31,9 @@ minecraft {
 }
 
 dependencies {
-	// minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    implementation 'org.jetbrains:annotations:20.1.0'
+
+    // minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	minecraft libs.minecraft
 	// mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	mappings libs.yarn

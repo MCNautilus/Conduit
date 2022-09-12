@@ -1,13 +1,11 @@
-# Mango Example Mod
-The official Mango Example Mod. 
+# Stem
+The core of Mango - a universal core for all loaders and versions.
 
-This example mod is (or will be) multi-loader and multi-version.
-## Getting Started
+This mod contains common functions and events between modloaders and versions.
 
-To update this template for proper use:
-- Update the package
-- Update gradle.properties to use the new package and mod ID
-- Update the icon
-- Update `libs.versions.toml`
-- Update ModConstants
-- Put your own `optifine.jar` into the `optifine` directory
+### The following helpers are in this library:
+- ClientTickEvent (events for every client tick)
+- HudRenderEvent (events for when the Minecraft HUD renders)
+- KeybindRegistry (a helper to register keybinds)
+- RenderHelper (a helper for rendering)
+- TextHelper (helps when creating text across versions)
