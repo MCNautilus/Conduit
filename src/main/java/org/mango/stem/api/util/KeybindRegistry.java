@@ -1,6 +1,8 @@
 package org.mango.stem.api.util;
 
+import net.legacyfabric.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.options.KeyBinding;
+import org.mango.stem.api.events.ClientTickEvent;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,9 +20,11 @@ public class KeybindRegistry {
      */
     public static void register(KeyBinding bind, Runnable onPressed) {
         KEYBINDS.put(bind, onPressed);
-    }
-
-    public static Map<KeyBinding, Runnable> getKeybindMap() {
-        return KEYBINDS;
+        KeyBindingHelper.registerKeyBinding(bind);
+        ClientTickEvent.register(() -> {
+            while (bind.wasPressed()) {
+                onPressed.run();
+            }
+        });
     }
 }

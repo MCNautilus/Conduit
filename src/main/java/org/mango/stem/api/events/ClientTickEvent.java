@@ -1,5 +1,7 @@
 package org.mango.stem.api.events;
 
+import net.legacyfabric.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,15 +9,9 @@ import java.util.List;
  * Runs after the Minecraft Client has ticked
  */
 public class ClientTickEvent {
-    private static final List<Runnable> registry = new ArrayList<>();
-
     public static void register(Runnable runnable) {
-        ClientTickEvent.registry.add(runnable);
-    }
-
-    public static void run() {
-        for (Runnable runnable : registry) {
+        ClientTickEvents.END_CLIENT_TICK.register(client -> {
             runnable.run();
-        }
+        });
     }
 }

@@ -11,10 +11,7 @@ public class TextHelper {
      * @return a new text without a translation
      */
     public static Text of(String text) {
-        // Lower than 1.19
         return new LiteralText(text);
-        // 1.19+
-        // return Text.of(text);
     }
 
     /**
@@ -23,9 +20,6 @@ public class TextHelper {
      * @return a new translated text component
      */
     public static Text translatable(String text) {
-        // Lower than 1.19
         return new TranslatableText(text);
-        // 1.19+
-        // return Text.translatable(text);
     }
 }
