@@ -2,8 +2,10 @@
 minecraft = "1.8.9"
 yarn = "1.8.9+build.202206171821"
 loader = "0.12.2"
+api = "1.7.1+1.8.9"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 yarn = { module = "net.fabricmc:yarn", version.ref = "yarn" }
 loader = { module = "net.fabricmc:fabric-loader", version.ref = "loader" }
+api = { module = "net.legacyfabric.legacy-fabric-api:legacy-fabric-api", version.ref = "api" }

@@ -38,10 +38,7 @@ public class RenderHelper {
     }
 
     public void drawTransparentBackground() {
-<<<<<<< HEAD
-=======
         Window window = new Window(MinecraftClient.getInstance());
         DrawableOpener.fillGradient(this, 0, 0, window.getWidth(), window.getHeight(), -1072689136, -804253680);
->>>>>>> 4753704 (ran git add *)
     }
 }

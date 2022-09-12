@@ -32,14 +32,10 @@ minecraft {
 
 dependencies {
     implementation 'org.jetbrains:annotations:20.1.0'
-
-    // minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	minecraft libs.minecraft
-	// mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
-	mappings libs.yarn
-	// modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modImplementation libs.loader
-	//modImplementation "dev.eny:mango_central:0.3.0"
+    minecraft libs.minecraft
+    mappings libs.yarn
+    modImplementation libs.loader
+    modImplementation libs.api
 }
 
 processResources {
