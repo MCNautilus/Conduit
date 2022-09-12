@@ -37,6 +37,6 @@ public class RenderHelper {
     public void fill(int x1, int y1, int x2, int y2, int color) {
     }
 
-    public void drawTransparentBackground(int width, int height) {
+    public void drawTransparentBackground() {
     }
 }
